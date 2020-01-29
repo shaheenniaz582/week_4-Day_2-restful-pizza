@@ -1,0 +1,9 @@
+<!-- <img src="http://www.discoverclifton.co.uk/wp-content/uploads/2014/11/pizza.jpg" alt="image"> -->
+<p> First name: <%= @order.first_name %> </p>
+<p> Last Name: <%=  @order.last_name %> </p>
+<p> Topping: <%= @order.topping %> </p>
+<p> Quantity: <%= @order.quantity %> </p>
+<form method="post" action="/pizza-orders/<%= @order.id%>/delete">
+  <input type="submit"  value="Delete">
+
+</form>
